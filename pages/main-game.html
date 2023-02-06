@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RockPaperScissors</title>
+    <link rel="stylesheet" href="../style/style.css">
+</head>
+<body id="content">
+    <div id="pop-up-container">
+        <div class="pop-up-item">
+            <p id="pop-up-text">Some message to the player will go here</p>
+        </div>
+        <div class="pop-up-item">
+            <a href="./main-game.html">Play again</a>
+        </div>
+    </div>
+    <div id="header">
+        <div id="flex-container">
+            <div class="flex-item logo">
+                <p>Rock, Paper, Scissors</p>
+            </div>
+            <div class="flex-item">
+                <div class="sub-container">
+                    <p>Your Score</p>
+                    <p class="score-text" id="player-score-tag">0</p>
+                </div>
+            </div>
+            <div class="flex-item">
+                <div class="sub-container">
+                    <p>Comp Score</p>
+                    <p class="score-text" id="comp-score-tag">0</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="section-one">
+        <div id="flex-container-three">
+            <div class="flex-item-three output" id="player-div">
+                <p>You</p>
+                <img src="../images/motivation.png" alt="" id="player-choice">
+            </div>
+            <div class="flex-item-three">
+                <p id="output-text">Waiting for input</p>
+            </div>
+            <div class="flex-item-three output" id="comp-div">
+                <p>Computer</p>
+                <img src="../images/motivation.png" alt="" id="comp-choice">
+            </div>
+        </div>
+        <div id="flex-container-two">
+            <div class="flex-item-two" onclick="initGame('rock')">
+                <img src="../images/motivation.png" alt="">
+            </div>
+            <div class="flex-item-two" onclick="initGame('paper')">
+                <img src="../images/palm.png" alt="">
+            </div>
+            <div class="flex-item-two" onclick="initGame('scissors')">
+                <img src="../images/two.png" alt="">
+            </div>
+        </div>  
+    </div>
+    <br>
+    <br>
+    <br>
+    <br>
+    <div id="footer">
+        <p>Copyright &copy; 2023 helloalexis</p>
+    </div>
+    <script src="../java-script.js"></script>
+</body>
+</html>
