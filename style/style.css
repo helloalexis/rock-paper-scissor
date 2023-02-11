@@ -96,7 +96,7 @@ body {
     display: flex;
     gap: 5px;
     color: #23383f;
-    border: 2px solid #23383f;
+    border: 3px solid #23383f;
     border-radius: 5px;
 }
 
@@ -138,17 +138,16 @@ body {
 .flex-item-three {
     text-align: center;
     flex: 1;
-
 }
 
 .flex-item-three.output {
-    border: 2px solid #23383f;
+    border: 3px solid #23383f;
     border-radius: 5px;
 
 }
 
 .flex-item-three img {
-    border: 2px solid #ffb13a;
+    border: 3px solid #ffb13a;
     border-radius: 100px;
     background-color: #ffb13a;
     width: 50%;
@@ -167,7 +166,7 @@ body {
 
 .flex-item-two {
     margin-top: 2%;
-    border: 2px solid #23383f;
+    border: 3px solid #23383f;
     border-radius: 5px;
     text-align: center;
     flex: 1;
@@ -177,18 +176,38 @@ body {
     width: 50%;
 }
 
-#footer {
+#footer{
+    display: flex;
     background-color: #E77136;
     color: #23383f;
-    font-weight: bold;
-    text-align: center;
     position: fixed;
-    left: 0px;
-    right: 0px;
-    bottom: 0px;
+    font-weight: bold;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    font-size: small;
+    
+}
+
+.footer-item{
+    text-align: center;
+    flex: 1;
+}
+
+.footer-item p{
+    display: inline-block;
+
+}
+
+.footer-item img{
+    vertical-align: middle;
+    width: 24px;
 }
 
 
 .flex-item-two:active {
     background-color: #E77136;
 }
+
+
+

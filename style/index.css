@@ -73,6 +73,7 @@ body{
 }
 
 #footer{
+    display: flex;
     background-color: #E77136;
     color: #23383f;
     position: fixed;
@@ -80,7 +81,23 @@ body{
     bottom: 0;
     left: 0;
     right: 0;
+    font-size: small;
+    
+}
+
+.footer-item{
     text-align: center;
+    flex: 1;
+}
+
+.footer-item p{
+    display: inline-block;
+
+}
+
+.footer-item img{
+    vertical-align: middle;
+    width: 24px;
 }
 
 @keyframes button-hover {
@@ -102,4 +119,5 @@ body{
     animation-duration: 1s;
     animation-fill-mode: forwards;
 }
+
 
